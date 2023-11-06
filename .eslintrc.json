@@ -15,14 +15,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "react"],
-  "ignorePatterns": [
-    "node_modules/",
-    "**/*.config.{js,ts}",
-    "dist/",
-    ".lintstagedrc.js",
-    "vite-env.d.ts",
-    "vite.config.ts"
-  ],
+  "ignorePatterns": ["node_modules/", "**/*.config.{js,ts}", "dist/"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
