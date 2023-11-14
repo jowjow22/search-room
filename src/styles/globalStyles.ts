@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding:0;
@@ -23,4 +23,10 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
-export default GlobalStyles
+export const theme = {
+  colors: {
+    primary: '#0070f3',
+    secondary: '#ff0080',
+    white: '#fff'
+  }
+}
