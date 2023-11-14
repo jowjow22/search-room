@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.6rem;
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
+    transition: background 0.3s;
   }
 
   body {
