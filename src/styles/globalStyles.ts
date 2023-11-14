@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root {
-	font-size: 62.5%;
+	  font-size: 62.5%;
   }
 
   body{
@@ -28,5 +28,30 @@ export const theme = {
     primary: '#0070f3',
     secondary: '#ff0080',
     white: '#fff'
+  },
+  font: {
+    family: {
+      body: "'Open Sans', sans-serif",
+      heading: "'Poppins', sans-serif"
+    },
+    sizes: {
+      small: '1.6rem',
+      medium: '1.8rem',
+      large: '2.0rem',
+      xlarge: '2.2rem',
+      xxlarge: '2.4rem'
+    },
+    weight: {
+      normal: 400,
+      bold: 700
+    }
+  },
+  spacings: {
+    xsmall: '0.8rem',
+    small: '1.6rem',
+    medium: '3.2rem',
+    large: '4.8rem',
+    xlarge: '6.4rem',
+    xxlarge: '8.0rem'
   }
 }

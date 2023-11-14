@@ -1,11 +1,14 @@
-import { MainContainer } from './styles'
+import { MainContainer, ButtonContainer } from './styles'
 import { Button } from '../../components/Button/Button'
 
 const Home = () => {
   return (
     <MainContainer>
       <h1>Home</h1>
-      <Button color="secondary">Im a button</Button>
+      <ButtonContainer>
+        <Button color="secondary">Im a button</Button>
+        <Button color="primary">Im another button</Button>
+      </ButtonContainer>
     </MainContainer>
   )
 }

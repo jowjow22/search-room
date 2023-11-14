@@ -13,3 +13,13 @@ export const MainContainer = styled.main`
     font-size: 4rem;
   }
 `
+
+export const ButtonContainer = styled.div`
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  gap: ${(props) => props.theme.spacings.small};
+  justify-content: space-between;
+`

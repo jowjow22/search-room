@@ -14,9 +14,14 @@ export const Button = styled.button<ButtonProps>`
   border-radius: 0.5rem;
   background-color: ${(props) => props.theme.colors[props.color || 'primary']};
   color: ${(props) => props.theme.colors.white};
-  font-size: 1.8rem;
-  font-weight: 700;
-  transition: all 0.2s;
+  font-size: ${(props) => props.theme.font.sizes.medium};
+  font-weight: ${(props) => props.theme.font.weight.bold};
+  transition: background 0.2s;
+  font-family: ${(props) => props.theme.font.family.body};
+  padding-block: ${(props) => props.theme.spacings.xsmall};
+  cursor: pointer;
+  padding-inline: ${(props) => props.theme.spacings.medium};
+  white-space: nowrap;
 
   &:hover {
     background-color: ${(props) =>
