@@ -9,7 +9,6 @@ export const MainContainer = styled.main`
   justify-content: center;
 
   & > h1 {
-    color: #444;
     font-size: 4rem;
   }
 `

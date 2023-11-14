@@ -12,6 +12,8 @@ export const GlobalStyles = createGlobalStyle`
 
   body{
     font-size: 1.6rem;
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
   }
 
   body {
@@ -20,15 +22,11 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, strong {
     font-family: 'Poppins', sans-serif;
+    color: ${(props) => props.theme.colors.text};
   }
 `
 
-export const theme = {
-  colors: {
-    primary: '#0070f3',
-    secondary: '#ff0080',
-    white: '#fff'
-  },
+const defaultTheme = {
   font: {
     family: {
       body: "'Open Sans', sans-serif",
@@ -54,4 +52,26 @@ export const theme = {
     xlarge: '6.4rem',
     xxlarge: '8.0rem'
   }
+}
+
+export const LightTheme = {
+  colors: {
+    primary: '#0070f3',
+    secondary: '#ff0080',
+    white: '#fff',
+    background: '#fff',
+    text: '#292929'
+  },
+  ...defaultTheme
+}
+
+export const DarkTheme = {
+  colors: {
+    primary: '#0070f3',
+    secondary: '#ff0080',
+    white: '#fff',
+    background: '#292929',
+    text: '#fff'
+  },
+  ...defaultTheme
 }
